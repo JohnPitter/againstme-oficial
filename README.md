@@ -10,7 +10,7 @@
 
 <br>
 
-Aplicativo desktop para Windows que monitora suas partidas de Valorant em tempo real e entrega análise profunda de adversários, aliados e do seu próprio desempenho — 100% local, usando o Riot Client API da sua própria máquina, sem servidores externos, sem conta, sem login.
+Aplicativo desktop para Windows que monitora suas partidas de Valorant em tempo real e entrega análise profunda de adversários, aliados e do seu próprio desempenho — 100% local, sem servidores externos, sem conta, sem login.
 
 <br>
 
@@ -18,7 +18,7 @@ Aplicativo desktop para Windows que monitora suas partidas de Valorant em tempo 
 <tr>
 <td align="center"><b>Tempo Real</b><br><sub>Detecção automática<br>polling de 2s</sub></td>
 <td align="center"><b>Todos os Modos</b><br><sub>Competitivo, Unrated<br>TDM, Spike Rush</sub></td>
-<td align="center"><b>100% Local</b><br><sub>Sem cloud, sem conta<br>Riot API direta</sub></td>
+<td align="center"><b>100% Local</b><br><sub>Sem cloud, sem conta<br>Sem login</sub></td>
 <td align="center"><b>Tático</b><br><sub>Mapa de calor de mortes<br>Intel do inimigo</sub></td>
 </tr>
 </table>
@@ -31,7 +31,7 @@ Aplicativo desktop para Windows que monitora suas partidas de Valorant em tempo 
 
 ## O que é o AgainstMe
 
-AgainstMe é um companion app desktop para jogadores de Valorant que querem **vantagem informacional** antes de cada round. Ele lê localmente os dados que o cliente da Riot já tem na sua máquina (lockfile, presences, sessões) e enriquece com as APIs públicas da Riot para te mostrar:
+AgainstMe é um companion app desktop para jogadores de Valorant que querem **vantagem informacional** antes de cada round. Enquanto você tem uma sessão ativa do Valorant aberta, o app te mostra:
 
 - Quem é o adversário, qual o rank, K/D, win rate, agentes mais jogados.
 - Se o inimigo é provavelmente um **smurf**, se está em **tilt**, se é **one-trick** de um agente.
@@ -134,7 +134,7 @@ O código-fonte é privado.
 - **100% local.** O app roda inteiramente na sua máquina. **Nada vai para servidor nosso.**
 - **Sem login, sem conta.** Não pedimos email, senha, nada. O app funciona enquanto você tem uma **sessão ativa do Valorant** aberta no seu PC.
 - **Sem telemetria oculta.** Os dados que você vê na tela são os dados que o app usa — não há coleta secreta.
-- **Persistência local.** Notas, configurações e cache ficam em `~/.againstme/` no seu PC.
+- **Persistência local.** Notas, configurações e cache ficam armazenados no seu PC.
 - **Não viola TOS da Riot.** O app opera sobre a sua sessão ativa do Valorant, da mesma forma que ferramentas como Blitz, Tracker.gg e outras. Não há injeção, não há leitura de memória do jogo, não há macro.
 
 ---
