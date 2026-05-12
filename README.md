@@ -171,17 +171,6 @@ Ao reportar bug, inclua:
 
 ---
 
-## Roadmap (resumo público)
-
-O app já cobre as fases 1 a 10 do roadmap interno. Próximos focos:
-
-- **Phase 6 — Visualizações:** replay 2D da partida, spider chart de habilidades, heatmap de performance semanal.
-- **Phase 8 — Coaching com IA:** análise tática gerada por IA, predição de partida, busca em linguagem natural ("me mostra partidas onde joguei Jett no Ascent e ganhei").
-- **Phase 9 — Compartilhamento:** share card pós-partida, weekly report, overlay para OBS, Discord Rich Presence.
-- **Phase 12 — Party Sync:** sala temporária compartilhada com seu time (sem login) para juntar intel de todos antes do round.
-
----
-
 ## FAQ
 
 **P: É legal usar? A Riot vai me banir?**
