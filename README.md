@@ -129,48 +129,6 @@ O código-fonte é privado.
 
 ---
 
-## Como funciona
-
-```
-Cliente Valorant (lockfile)
-        |
-        v
-Riot Client Local (127.0.0.1:{porta})
-   |         |          |
-   v         v          v
-Auth     Presences   Sessions
-Tokens   (partys,    (estado do
-          placares)    jogo)
-   |
-   v
-Riot Remote API
-   |         |          |
-   v         v          v
-GLZ API    PD API    valorant-api.com
-(partida)  (MMR,     (icones de agente,
-           historico) imagens de mapa)
-        |
-        v
-   AgainstMe Desktop
-   (Go backend + React frontend)
-```
-
-### Fluxo de dados
-1. **Lockfile** — lê porta e senha do cliente da Riot.
-2. **Auth** — pega os JWTs do Riot Client local.
-3. **Polling** — consulta endpoints de pregame/coregame a cada 2 segundos.
-4. **Enriquecimento** — busca nomes, ranks, KDA, info de party.
-5. **Cache** — tudo cacheado por partida para minimizar chamadas.
-6. **UI** — frontend React renderiza com refresh de 2s.
-
-### Estratégia de rate limit
-- 200ms de delay entre chamadas sequenciais
-- Cache por partida (nomes, ranks, KDA não são re-buscados)
-- Retry com backoff em 429 (cooldown de 10s)
-- Detalhes de partida ficam em cache permanente (dado imutável)
-
----
-
 ## Privacidade e Segurança
 
 - **100% local.** O app conversa direto com o Riot Client da sua máquina e com as APIs públicas da Riot. **Nada vai para servidor nosso.**
@@ -178,21 +136,6 @@ GLZ API    PD API    valorant-api.com
 - **Sem telemetria oculta.** Os dados que você vê na tela são os dados que o app usa — não há coleta secreta.
 - **Persistência local.** Notas, configurações e cache ficam em `~/.againstme/` no seu PC.
 - **Não viola TOS da Riot.** Usamos apenas endpoints públicos do Riot Client, da mesma forma que ferramentas como Blitz, Tracker.gg e outras. Não há injeção, não há leitura de memória do jogo, não há macro.
-
----
-
-## Stack
-
-| Camada | Tecnologia |
-|--------|-----------|
-| Framework desktop | [Wails v2](https://wails.io/) (Go + WebView2) |
-| Backend | Go 1.21+ |
-| Frontend | React 18 + Vite |
-| Estilo | CSS inline com design system tático |
-| Fontes | Orbitron, Exo 2, IBM Plex Mono |
-| Dados | Riot Local Client API + Remote GLZ/PD |
-| Persistência | JSON local (`~/.againstme/`) |
-| Assets | [valorant-api.com](https://valorant-api.com) |
 
 ---
 
