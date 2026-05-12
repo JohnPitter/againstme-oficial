@@ -131,11 +131,11 @@ O código-fonte é privado.
 
 ## Privacidade e Segurança
 
-- **100% local.** O app conversa direto com o Riot Client da sua máquina e com as APIs públicas da Riot. **Nada vai para servidor nosso.**
-- **Sem login, sem conta.** Não pedimos email, senha, nada. A autenticação usa o lockfile do próprio Valorant.
+- **100% local.** O app roda inteiramente na sua máquina. **Nada vai para servidor nosso.**
+- **Sem login, sem conta.** Não pedimos email, senha, nada. O app funciona enquanto você tem uma **sessão ativa do Valorant** aberta no seu PC.
 - **Sem telemetria oculta.** Os dados que você vê na tela são os dados que o app usa — não há coleta secreta.
 - **Persistência local.** Notas, configurações e cache ficam em `~/.againstme/` no seu PC.
-- **Não viola TOS da Riot.** Usamos apenas endpoints públicos do Riot Client, da mesma forma que ferramentas como Blitz, Tracker.gg e outras. Não há injeção, não há leitura de memória do jogo, não há macro.
+- **Não viola TOS da Riot.** O app opera sobre a sua sessão ativa do Valorant, da mesma forma que ferramentas como Blitz, Tracker.gg e outras. Não há injeção, não há leitura de memória do jogo, não há macro.
 
 ---
 
@@ -185,7 +185,7 @@ O app já cobre as fases 1 a 10 do roadmap interno. Próximos focos:
 ## FAQ
 
 **P: É legal usar? A Riot vai me banir?**
-Não. Usamos só endpoints públicos do Riot Client — mesma abordagem de Blitz, Tracker.gg e similares. Sem injeção, sem leitura de memória, sem automação de input.
+Não. O app opera sobre a sua sessão ativa do Valorant — mesma abordagem de Blitz, Tracker.gg e similares. Sem injeção, sem leitura de memória, sem automação de input.
 
 **P: Funciona em Linux ou Mac?**
 Não. Valorant só roda em Windows (e o anti-cheat Vanguard idem), então o app também é Windows-only.
