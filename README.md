@@ -16,7 +16,7 @@ Aplicativo desktop para Windows que monitora suas partidas de Valorant em tempo 
 
 <table>
 <tr>
-<td align="center"><b>Tempo Real</b><br><sub>Detecção automática<br>polling de 2s</sub></td>
+<td align="center"><b>Tempo Real</b><br><sub>Detecção automática<br>durante a partida</sub></td>
 <td align="center"><b>Todos os Modos</b><br><sub>Competitivo, Unrated<br>TDM, Spike Rush</sub></td>
 <td align="center"><b>100% Local</b><br><sub>Sem cloud, sem conta<br>Sem login</sub></td>
 <td align="center"><b>Tático</b><br><sub>Mapa de calor de mortes<br>Intel do inimigo</sub></td>
