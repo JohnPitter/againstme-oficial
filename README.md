@@ -143,9 +143,6 @@ O código-fonte é privado.
 
 - Windows 10 ou 11
 - Valorant instalado
-- WebView2 Runtime (já vem com Windows 11; o instalador do app também resolve)
-
-Não precisa de Go, Node ou nada de dev — o instalador final é um `.exe` standalone.
 
 ---
 
