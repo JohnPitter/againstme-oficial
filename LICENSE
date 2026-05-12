@@ -1,0 +1,25 @@
+Copyright (c) 2026 Joao Pedro Tavares
+
+All Rights Reserved.
+
+This repository contains documentation, marketing material, and supporting
+assets for the AgainstMe desktop application (https://againstme.app/).
+
+The AgainstMe application source code is NOT included in this repository
+and is proprietary. The application binaries are distributed separately
+through https://againstme.app/.
+
+The textual content of this repository (README, documentation, issue
+templates) may be freely referenced and quoted for review, journalism,
+academic discussion, and support purposes. Screenshots and the app icon
+may be used for editorial coverage of the product.
+
+You may NOT:
+- Redistribute the AgainstMe application binaries.
+- Claim authorship of any of the content here.
+- Use the AgainstMe name or logo to endorse derivative products without
+  written permission.
+
+AgainstMe is an independent third-party tool. It is not affiliated with,
+endorsed by, sponsored by, or approved by Riot Games, Inc. VALORANT and
+all related trademarks are property of Riot Games, Inc.

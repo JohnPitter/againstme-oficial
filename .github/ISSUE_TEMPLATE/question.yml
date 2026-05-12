@@ -1,0 +1,16 @@
+name: Pergunta
+description: Dúvida sobre uso ou comportamento do app
+title: "[Pergunta] "
+labels: ["question"]
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Qual a dúvida?
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Versão do AgainstMe (se relevante)
+      placeholder: "ex: v0.5.89"

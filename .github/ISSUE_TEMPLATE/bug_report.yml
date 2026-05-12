@@ -1,0 +1,53 @@
+name: Bug Report
+description: Reporte um problema com o AgainstMe
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Versão do AgainstMe
+      description: Aparece no canto inferior da janela do app
+      placeholder: "ex: v0.5.89"
+    validations:
+      required: true
+  - type: input
+    id: windows
+    attributes:
+      label: Versão do Windows
+      placeholder: "ex: Windows 11 23H2"
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: O que aconteceu
+      description: Descreva o bug com o máximo de detalhe possível
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Passos para reproduzir
+      placeholder: |
+        1. Abrir o app
+        2. Entrar em partida competitiva
+        3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Comportamento esperado
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Prints / vídeos
+      description: Arraste imagens aqui se ajudar a explicar
+  - type: textarea
+    id: extra
+    attributes:
+      label: Contexto adicional
+      description: Estava em party? Mapa específico? Modo específico?
