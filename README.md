@@ -211,4 +211,4 @@ Veja [**againstme.app**](https://againstme.app/) para detalhes de licenciamento 
 
 Este projeto **não é afiliado, endossado, patrocinado ou aprovado pela Riot Games**. Valorant e todos os ativos relacionados são propriedade da Riot Games, Inc.
 
-AgainstMe é uma ferramenta independente que utiliza apenas APIs públicas do cliente da Riot.
+AgainstMe é uma ferramenta independente.
